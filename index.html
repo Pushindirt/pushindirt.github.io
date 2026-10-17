@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="SWGPush Backups: private backup administration for SWGPush.">
+  <title>SWGPush Backups</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="brand" href="index.html">SWGPush Backups</a>
+    <nav aria-label="Main navigation">
+      <a href="index.html" aria-current="page">Overview</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+    </nav>
+  </header>
+  <main id="main">
+    <p class="eyebrow">SWGPush</p>
+    <h1>Backups for a persistent galaxy.</h1>
+    <p class="lead">SWGPush Backups is a private administration tool used by the server operator to protect game-server data and check that backup archives can be restored.</p>
+    <section class="card" aria-labelledby="purpose">
+      <h2 id="purpose">What the application does</h2>
+      <p>The tool creates local server-database backups, validates restored copies, and uploads completed archives to the operator’s Google Drive backup folders. It checks the uploaded files before marking an offsite copy complete.</p>
+      <p>Google authorization is used by the operator to connect the backup tool to their own Drive account. Players do not need to authorize a Google account. This website provides information about the application; it has no sign-in form or backup download service.</p>
+    </section>
+    <section aria-labelledby="data">
+      <h2 id="data">How Google Drive access is used</h2>
+      <p>The configured Drive permission allows broad file access. The backup workflow uses the configured backup folders for archive transfers and verification, and checks account storage availability. Credentials and backup archives are stored outside this public website and its repository.</p>
+      <p>Read the <a href="privacy.html">privacy notice</a> for information about authorization, storage, retention and access removal, and the <a href="terms.html">terms of use</a> for the tool’s intended use.</p>
+    </section>
+    <section aria-labelledby="contact">
+      <h2 id="contact">Project contact</h2>
+      <p>Maintained by <a href="https://github.com/Pushindirt">Pushindirt</a>. General questions can be raised in the <a href="https://github.com/Pushindirt/pushindirt.github.io/issues">information-site repository</a>. For a private data request, use the support email displayed on the application’s Google consent screen.</p>
+    </section>
+  </main>
+  <footer><span>SWGPush Backups</span><span><a href="privacy.html">Privacy notice</a> · <a href="terms.html">Terms of use</a></span></footer>
+</body>
+</html>
